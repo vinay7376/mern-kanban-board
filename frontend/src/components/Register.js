@@ -12,7 +12,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5001/api/users/register", {
+      const res = await axios.post("https://mern-kanban-board-wtia.onrender.com/api/users/register", {
         name,
         email,
         password,

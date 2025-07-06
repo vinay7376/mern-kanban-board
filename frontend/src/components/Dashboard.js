@@ -12,7 +12,7 @@ const Dashboard = () => {
   const fetchTasks = async () => {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-      const res = await axios.get("http://localhost:5001/api/tasks", {
+      const res = await axios.get("https://mern-kanban-board-wtia.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },

@@ -16,7 +16,7 @@ const TaskCard = ({ task, refresh }) => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5001/api/tasks/${task._id}`, {
+      await axios.delete(`https://mern-kanban-board-wtia.onrender.com/api/tasks/${task._id}`, {
         headers: { Authorization: `Bearer ${userInfo.token}` },
       });
       toast.success("🗑️ Task Deleted");
@@ -28,7 +28,7 @@ const TaskCard = ({ task, refresh }) => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5001/api/tasks/${task._id}`, formData, {
+      await axios.put(`https://mern-kanban-board-wtia.onrender.com/api/tasks/${task._id}`, formData, {
         headers: { Authorization: `Bearer ${userInfo.token}` },
       });
       toast.success("✅ Task Updated");

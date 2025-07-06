@@ -14,8 +14,7 @@ const AddTaskForm = ({ onTaskAdded }) => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
     try {
-      await axios.post(
-        "http://localhost:5001/api/tasks",
+      await axios.post("https://mern-kanban-board-wtia.onrender.com/api/tasks",
         {
           title,
           description: desc,
