@@ -99,18 +99,12 @@ mern-kanban-board/
 │   ├── server.js
 │   └── .env
 
----
-
-## 🧠 How to Run Locally
-
----
+🧠 How to Run Locally
 🔧 Backend Setup
 bash
 cd server
 npm install
 npm start
-
----
 
 🔑 Backend .env File
 ini
